@@ -45,8 +45,14 @@ public class PrePostProcessor {
         if (objectDetectionModelType == 0) {
             mOutputRow = 25200; // as decided by the YOLOv5 model for input image of size 640*640
             mOutputColumn = (mNumberOfClasses + 5); // left, top, right, bottom, score and 80 class probability
-        } else {
+        } else if(objectDetectionModelType == 1) {
             mOutputRow = 8400; // as decided by the YOLOv5 model for input image of size 640*640
+            mOutputColumn = (mNumberOfClasses + 4); // left, top, right, bottom, score and 80 class probability
+        }else if(objectDetectionModelType == 2) {
+            mOutputRow = 5376; // 512x512
+            mOutputColumn = (mNumberOfClasses + 4); // left, top, right, bottom, score and 80 class probability
+        }else if(objectDetectionModelType == 3) {
+            mOutputRow = 2100; // 320x320
             mOutputColumn = (mNumberOfClasses + 4); // left, top, right, bottom, score and 80 class probability
         }
 

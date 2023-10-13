@@ -62,8 +62,14 @@
         if (_mObjectDetectionModelType==0) {
             _mOutputRow = 25200;
             _mOutputColumn = _mNumberOfClasses + 5;
-        } else {
+        } else if(_mObjectDetectionModelType == 1) {
             _mOutputRow = 8400;
+            _mOutputColumn = _mNumberOfClasses + 4;
+        }else if(_mObjectDetectionModelType == 2) {
+            _mOutputRow = 5376;
+            _mOutputColumn = _mNumberOfClasses + 4;
+        }else if(_mObjectDetectionModelType == 3) {
+            _mOutputRow = 2100;
             _mOutputColumn = _mNumberOfClasses + 4;
         }
     }

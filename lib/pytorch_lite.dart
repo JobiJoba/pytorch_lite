@@ -21,7 +21,7 @@ const List<double> torchVisionNormSTDRGB = [0.229, 0.224, 0.225];
 const List<double> noMeanRGB = [0, 0, 0];
 const List<double> noSTDRGB = [1, 1, 1];
 
-enum ObjectDetectionModelType { yolov5, yolov8 }
+enum ObjectDetectionModelType { yolov5, yolov8, yolov8_512, yolov8_320 }
 
 class PytorchLite {
   /*
